@@ -21,8 +21,8 @@
 <a name="desc0"></a>
 ### K8s-Architecture - _Overview_.
 
-<a name="desc0,0"></a>
-<img alt="K8s-Architecture - _Overview_.png" src="assets/2.png" />
+
+<a name="desc0,0"><img alt="K8s-Architecture - _Overview_.png" src="assets/2.png" /></a>
 
 <a name="desc0,1"></a>
 #### Worker Node components
