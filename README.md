@@ -19,10 +19,10 @@
 2. [K8s-Architecture - _All the components interacting with each other_.](#desc1)
 
 <a name="desc0"></a>
+<a name="desc0,0"></a>
 ### K8s-Architecture - _Overview_.
 
-
-<a name="desc0,0"><img alt="K8s-Architecture - _Overview_.png" src="assets/2.png" /></a>
+<img alt="K8s-Architecture - _Overview_.png" src="assets/2.png" />
 
 <a name="desc0,1"></a>
 #### Worker Node components
