@@ -30,7 +30,7 @@
     - Manages the execution of containers via the **Container Runtime Interface (CRI)**.
     - Examples: **containerd**, **cri-o**. 
 - Node Agent "Kubelet".
-    - An agent running on each worker node communicates with the control plane components from the master node..
+    - An agent running on each worker node communicates with the control plane components from the master node.
     - Listens for **Pod** specifications from the **API server**.
     - Ensures the specified containers are running and healthy.
     - Reports back to the **control plane** about the node's status. 
