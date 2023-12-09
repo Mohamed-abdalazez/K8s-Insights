@@ -15,7 +15,7 @@
 1. [K8s-Architecture - _Overview_.](#desc0)
    - [_Overview_.](#desc0,0)
    - [Worker Node components.](#desc0,1)
-   - Master Node components. 
+   - [Master Node components.](#desc0,2) 
 2. [K8s-Architecture - _All the components interacting with each other_.](#desc1)
 
 <a name="desc0"></a>
@@ -39,7 +39,22 @@
 - Addons "DNS, Dashboard User Interface, Monitoring and logging".
     - Cluster features and functionality not yet available in Kubernetes, therefore implemented with third-party pods and services.
 
+<a name="desc0,2"></a>
+#### Master Node components
 
+- kube-api-server
+    - Exposes a secure and extensible RESTful interface, validates and processes requests, manages authentication and authorization, and interacts with ```etcd``` to maintain the desired state of the cluster. 
+- kube-scheduler
+    - Assigns Pods to worker nodes based on resource availability and other constraints.
+- kube-Controller-Manager  
+    - Ensures that the current state of the cluster matches the desired state.
+- Cloud Controller Manager
+    - Links the cluster to any cloud provider's APIs
+- etcd
+    - [etcd](https://etcd.io/) is a distributed, reliable key-value store for the most critical data in a distributed systems.
+    - It is used to persist the state of a Kubernetes cluster.
+    - Only the ```API server``` is able to communicate with the etcd data store via:
+        - ```etcdctl```: is a command-line tool for interacting with the etcd distributed key-value store. 
 
 <a name="desc1"></a>
 ### K8s-Architecture - _All the components interacting with each other_.
